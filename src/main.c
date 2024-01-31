@@ -8,7 +8,7 @@ int main() {
     interface_init();
     game_init(&game);
     
-    for (nodelay(stdscr, 1); !game.end; usleep(4000)) {
+    for (nodelay(stdscr, 1); !game.end; usleep(2000)) {
         if (++cont % 16 == 0) {
             game_collisions(&game);
             game_move_ball(&game);

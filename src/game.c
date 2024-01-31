@@ -66,19 +66,19 @@ void game_get_input(Game* game) {
 
     switch (getch()) {
             case KEY_DOWN: 
-                paddle_move_down(right_paddle, 1);
+                paddle_move_down(right_paddle, 2);
                 break;
             
             case KEY_UP:   
-                paddle_move_up(right_paddle, 1);
+                paddle_move_up(right_paddle, 2);
                 break;
 
-            case 'q':      
-                paddle_move_up(left_paddle, 1);
+            case 'w':      
+                paddle_move_up(left_paddle, 2);
                 break;
 
-            case 'a':      
-                paddle_move_down(left_paddle, 1);
+            case 's':      
+                paddle_move_down(left_paddle, 2);
                 break;
 
             case 'p':      
