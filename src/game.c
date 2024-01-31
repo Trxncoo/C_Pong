@@ -92,7 +92,6 @@ void game_get_input(Game* game) {
         }
 }
 
-
 // Game Ball
 void game_move_ball(Game* game) {
     Ball* ball = &game->ball;
